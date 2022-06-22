@@ -1,0 +1,26 @@
+package genaral;
+
+import java.util.Scanner;
+
+public class prime {
+public static void main(String[] args) {
+	int i,num,count = 0;
+	
+	Scanner Sc = new Scanner(System.in);
+    num = Sc.nextInt();
+    
+	for(i=1; i<=num; i++)
+	{ 
+		if(num % i==0) {
+		count++;
+		}
+	}
+	if(count == 2)
+	{
+		System.out.println("prime");
+	}
+	else {
+		System.out.println("not prime");
+	}
+}
+}

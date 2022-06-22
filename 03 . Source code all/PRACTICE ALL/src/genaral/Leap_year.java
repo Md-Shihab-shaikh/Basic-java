@@ -1,0 +1,33 @@
+package genaral;
+
+import java.util.Scanner;
+
+public class Leap_year {
+
+	public static void main(String[] args) {
+		
+		int year;
+		Scanner Sc = new Scanner(System.in);
+		year = Sc.nextInt();
+		  
+		if (year % 4 == 0)
+		{
+			System.out.println("leap year ");
+		}
+		else if (year % 400 == 0 )
+		{
+			System.out.println("leap year ");
+		}
+		else if(year % 100 == 0)
+		{
+			System.out.println("not leap year");
+		}
+		else 
+		{
+			System.out.println(" not leap year");
+		}
+		
+		
+		
+	}
+}
